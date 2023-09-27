@@ -27167,14 +27167,22 @@ var _actionProvider = require("./src/chatbot/ActionProvider");
 var _actionProviderDefault = parcelHelpers.interopDefault(_actionProvider);
 var _messageParser = require("./src/chatbot/MessageParser");
 var _messageParserDefault = parcelHelpers.interopDefault(_messageParser);
+var _appCss = require("./App.css");
 const App = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactChatbotKitDefault.default), {
-        config: (0, _configDefault.default),
-        messageParser: (0, _messageParserDefault.default),
-        actionProvider: (0, _actionProviderDefault.default)
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "App",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactChatbotKitDefault.default), {
+            config: (0, _configDefault.default),
+            messageParser: (0, _messageParserDefault.default),
+            actionProvider: (0, _actionProviderDefault.default)
+        }, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 13,
+            columnNumber: 5
+        }, undefined)
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 10,
+        lineNumber: 12,
         columnNumber: 5
     }, undefined);
 };
@@ -27188,7 +27196,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-chatbot-kit":"c4Ew9","react-chatbot-kit/build/main.css":"j1Gc4","./src/chatbot/config":"98p6t","./src/chatbot/ActionProvider":"lUUUV","./src/chatbot/MessageParser":"fh1Ff","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"c4Ew9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-chatbot-kit":"c4Ew9","react-chatbot-kit/build/main.css":"j1Gc4","./src/chatbot/config":"98p6t","./src/chatbot/ActionProvider":"lUUUV","./src/chatbot/MessageParser":"fh1Ff","./App.css":"7g3a6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"c4Ew9":[function(require,module,exports) {
 (()=>{
     "use strict";
     var e = {
@@ -27870,17 +27878,121 @@ $RefreshReg$(_c, "App");
 })();
 
 },{}],"j1Gc4":[function() {},{}],"98p6t":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fe9d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fe9d.prelude(module);
+
+try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactChatbotKit = require("react-chatbot-kit");
+var _avatar = require("./Avatar");
+var _avatarDefault = parcelHelpers.interopDefault(_avatar);
+var _gotItBtn = require("./components/GotItBtn");
+var _gotItBtnDefault = parcelHelpers.interopDefault(_gotItBtn);
 const config = {
+    botName: "HappilyEver.co",
     initialMessages: [
-        (0, _reactChatbotKit.createChatBotMessage)(`Hello world`)
+        (0, _reactChatbotKit.createChatBotMessage)("Hello, Welcome to student info system", {
+            widget: "GotItBtn"
+        })
+    ],
+    customComponents: {
+        botAvatar: (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _avatarDefault.default), {
+                ...props
+            }, void 0, false, {
+                fileName: "src/chatbot/config.js",
+                lineNumber: 13,
+                columnNumber: 26
+            }, undefined)
+    },
+    widgets: [
+        {
+            widgetName: "GotItBtn",
+            widgetFunc: (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _gotItBtnDefault.default), {
+                    ...props
+                }, void 0, false, {
+                    fileName: "src/chatbot/config.js",
+                    lineNumber: 19,
+                    columnNumber: 30
+                }, undefined)
+        },
+        {
+            widgetName: "slots",
+            widgetFunc: (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Slot, {
+                    ...props
+                }, void 0, false, {
+                    fileName: "src/chatbot/config.js",
+                    lineNumber: 23,
+                    columnNumber: 30
+                }, undefined)
+        },
+        {
+            widgetName: "exit",
+            widgetFunc: (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ExitCounter, {
+                    ...props
+                }, void 0, false, {
+                    fileName: "src/chatbot/config.js",
+                    lineNumber: 27,
+                    columnNumber: 30
+                }, undefined)
+        },
+        {
+            widgetName: "askage",
+            widgetFunc: (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AskAge, {
+                    ...props
+                }, void 0, false, {
+                    fileName: "src/chatbot/config.js",
+                    lineNumber: 31,
+                    columnNumber: 30
+                }, undefined)
+        }
     ]
 };
 exports.default = config;
 
-},{"react-chatbot-kit":"c4Ew9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+  $parcel$ReactRefreshHelpers$fe9d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-chatbot-kit":"c4Ew9","./Avatar":"atwYw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/GotItBtn":"5afe1"}],"atwYw":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$eb05 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$eb05.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _app = require("../../App");
+var _appDefault = parcelHelpers.interopDefault(_app);
+const Avatar = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "HE",
+        children: "HE"
+    }, void 0, false, {
+        fileName: "src/chatbot/Avatar.js",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Avatar;
+exports.default = Avatar;
+var _c;
+$RefreshReg$(_c, "Avatar");
+
+  $parcel$ReactRefreshHelpers$eb05.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../App":"2Ew96"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27910,42 +28022,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"lUUUV":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$373f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$373f.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const ActionProvider = ({ createChatBotMessage, setState, children })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: (0, _reactDefault.default).Children.map(children, (child)=>{
-            return /*#__PURE__*/ (0, _reactDefault.default).cloneElement(child, {
-                actions: {}
-            });
-        })
-    }, void 0, false, {
-        fileName: "src/chatbot/ActionProvider.js",
-        lineNumber: 5,
-        columnNumber: 5
-    }, undefined);
-};
-_c = ActionProvider;
-exports.default = ActionProvider;
-var _c;
-$RefreshReg$(_c, "ActionProvider");
-
-  $parcel$ReactRefreshHelpers$373f.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+},{}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -28083,7 +28160,97 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"fh1Ff":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"5afe1":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7beb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7beb.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _app = require("../../../App");
+var _appDefault = parcelHelpers.interopDefault(_app);
+const GotItBtn = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            id: "gotitbtn",
+            className: "btn",
+            onClick: ()=>initialActon(),
+            children: "Got It"
+        }, void 0, false, {
+            fileName: "src/chatbot/components/GotItBtn.js",
+            lineNumber: 10,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/chatbot/components/GotItBtn.js",
+        lineNumber: 9,
+        columnNumber: 5
+    }, undefined);
+};
+_c = GotItBtn;
+exports.default = GotItBtn;
+var _c;
+$RefreshReg$(_c, "GotItBtn");
+
+  $parcel$ReactRefreshHelpers$7beb.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../../App":"2Ew96"}],"lUUUV":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$373f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$373f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const ActionProvider = ({ createChatBotMessage, setState, children })=>{
+    const initialAction = ()=>{
+        const message = createChatBotMessage("Got It");
+        updateState(message);
+    };
+    const updateState = (message)=>{
+        setState((prev)=>({
+                ...prev,
+                messages: [
+                    ...prev.messages,
+                    message
+                ]
+            }));
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: (0, _reactDefault.default).Children.map(children, (child)=>{
+            return /*#__PURE__*/ (0, _reactDefault.default).cloneElement(child, {
+                actions: {}
+            });
+        })
+    }, void 0, false, {
+        fileName: "src/chatbot/ActionProvider.js",
+        lineNumber: 20,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ActionProvider;
+exports.default = ActionProvider;
+var _c;
+$RefreshReg$(_c, "ActionProvider");
+
+  $parcel$ReactRefreshHelpers$373f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fh1Ff":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d766 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28122,6 +28289,6 @@ $RefreshReg$(_c, "MessageParser");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["dTIYo","1xC6H","bB7Pu"], "bB7Pu", "parcelRequire8566")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7g3a6":[function() {},{}]},["dTIYo","1xC6H","bB7Pu"], "bB7Pu", "parcelRequire8566")
 
 //# sourceMappingURL=index.af7f0a10.js.map
