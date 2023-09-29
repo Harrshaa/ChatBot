@@ -1,22 +1,18 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
-import Avatar from './Avatar';
-import GotItBtn from './components/GotItBtn';
-
+import GotIt from '../components/GotIt';
+import Slot from '../components/Slot';
+import ExitCounter from '../components/Exit';
+import Age from '../components/Age';
 
 const config = {
- 
-  botName:"HappilyEver.co",
-  initialMessages:[createChatBotMessage('Hello, Welcome to student info system',{
+    botName: "HappilyEver",
+  initialMessages: [createChatBotMessage(`Hello, Welcome to student info system`, {
     widget: "GotItBtn"
-  })],
-  customComponents:{
-    botAvatar:(props) => <Avatar {...props}/> 
-  },
-
+  })], 
   widgets:[
     {
       widgetName: "GotItBtn",
-      widgetFunc: (props) => <GotItBtn {...props} />,
+      widgetFunc: (props) => <GotIt {...props} />,
     },
     {
       widgetName: "slots",
@@ -27,12 +23,12 @@ const config = {
       widgetFunc: (props) => <ExitCounter {...props} />,
     },
     {
-      widgetName: "askage",
-      widgetFunc: (props) => <AskAge {...props} />,
+      widgetName: "Age",
+      widgetFunc: (props) => <Age {...props} />,
     }
 
   ]
-
+  
 };
 
 export default config;

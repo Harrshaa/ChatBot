@@ -24,12 +24,12 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     updateState(message);
   }
 
-  // const displayTimings = ()=>{
-  //   const message = createChatBotMessage({
-  //     widget:"timings"
-  //   });
-  //   updateState(message);
-  // }
+  const displayTimings = ()=>{
+    const message = createChatBotMessage({
+      widget:"timings"
+    });
+    updateState(message);
+  }
 
   const timingMessage = (time)=>{
     const message = createClientMessage(time.date+" "+time.time);
@@ -45,7 +45,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
 
   const enterAge = ()=>{
     const message = createChatBotMessage("Enter your age",{
-      widget:"askage"
+      widget:"Age"
     });
     updateState(message, "exit");
   }
