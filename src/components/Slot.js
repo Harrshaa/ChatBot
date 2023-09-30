@@ -18,9 +18,9 @@ const Slot = (props) => {
   return (
     <div id="time-div">
         <div >
-      <button id="date1" className="btn" onClick={()=>displayTimings("15 May, Mon")} >15 MAY <br/>Mon</button>
-      <button id="date2" className="btn" onClick={()=>displayTimings("16 May, Tue")} >16 MAY <br/>Tue</button>
-      <button id="date3" className="btn" onClick={()=>displayTimings("17 May, Wed")} >17 MAY <br/>Wed</button>
+      <button id="date1" className="btn" onClick={()=>displayTimings("02 Oct, Mon")} >02 Oct <br/>Mon</button>
+      <button id="date2" className="btn" onClick={()=>displayTimings("03 Oct, Tue")} >03 Oct <br/>Tue</button>
+      <button id="date3" className="btn" onClick={()=>displayTimings("04 Oct, Wed")} >04 Oct <br/>Wed</button>
     </div>
     {showTiming ?
         <div>
